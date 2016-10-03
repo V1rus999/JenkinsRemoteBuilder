@@ -3,7 +3,7 @@ package com.droidit.JenkinsBuilder.dependencyInjection;
 import android.app.Activity;
 
 import com.droidit.domain.basicExample.BasicExampleContract;
-import com.droidit.JenkinsBuilder.basicExample.BasicExampleWireframe;
+import com.droidit.JenkinsBuilder.main_activity.BasicExampleWireframe;
 
 import dagger.Module;
 import dagger.Provides;

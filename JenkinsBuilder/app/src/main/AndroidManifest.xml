@@ -3,13 +3,13 @@
     package="com.droidit.JenkinsBuilder">
 
     <application
-        android:name="com.droidit.JenkinsBuilder.DefaultApplication"
+        android:name="com.droidit.JenkinsBuilder.JenkinsApplication"
         android:allowBackup="true"
         android:icon="@mipmap/app_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.droidit.JenkinsBuilder.basicExample.BasicExampleActivity">
+        <activity android:name="com.droidit.JenkinsBuilder.main_activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

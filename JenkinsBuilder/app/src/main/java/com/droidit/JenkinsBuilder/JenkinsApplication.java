@@ -10,7 +10,7 @@ import com.droidit.JenkinsBuilder.dependencyInjection.DaggerApplicationComponent
  * Created by JohannesC on 30-May-16.
  * Application class. Can create own one and use logic in this class.
  */
-public class DefaultApplication extends Application {
+public class JenkinsApplication extends Application {
 
     private ApplicationComponent applicationComponent;
 

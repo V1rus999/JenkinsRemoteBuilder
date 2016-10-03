@@ -1,6 +1,6 @@
 package com.droidit.JenkinsBuilder.dependencyInjection;
 
-import com.droidit.JenkinsBuilder.basicExample.BasicExampleActivity;
+import com.droidit.JenkinsBuilder.main_activity.MainActivity;
 
 import dagger.Component;
 
@@ -11,6 +11,6 @@ import dagger.Component;
 @Component(dependencies = ApplicationComponent.class, modules = {NetworkModule.class, WireframeModule.class, PresenterModule.class})
 public interface BasicExampleComponent {
 
-    void inject(BasicExampleActivity basicExampleActivity);
+    void inject(MainActivity mainActivity);
 
 }

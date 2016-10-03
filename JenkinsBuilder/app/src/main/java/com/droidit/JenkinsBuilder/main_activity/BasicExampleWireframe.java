@@ -1,4 +1,4 @@
-package com.droidit.JenkinsBuilder.basicExample;
+package com.droidit.JenkinsBuilder.main_activity;
 
 import android.app.Activity;
 

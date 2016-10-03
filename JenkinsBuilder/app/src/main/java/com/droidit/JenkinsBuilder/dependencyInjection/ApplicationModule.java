@@ -4,7 +4,7 @@ import android.content.Context;
 
 import com.droidit.domain.threading.BackgroundExecutor;
 import com.droidit.domain.threading.MainThread;
-import com.droidit.JenkinsBuilder.DefaultApplication;
+import com.droidit.JenkinsBuilder.JenkinsApplication;
 import com.droidit.JenkinsBuilder.UIThread;
 
 import java.util.concurrent.Executor;
@@ -21,9 +21,9 @@ import dagger.Provides;
 @Module
 public class ApplicationModule {
 
-    private final DefaultApplication application;
+    private final JenkinsApplication application;
 
-    public ApplicationModule(DefaultApplication application) {
+    public ApplicationModule(JenkinsApplication application) {
         this.application = application;
     }
 

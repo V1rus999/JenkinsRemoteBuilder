@@ -1,4 +1,4 @@
-package com.droidit.JenkinsBuilder.basicExample;
+package com.droidit.JenkinsBuilder.main_activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.droidit.domain.basicExample.BasicExampleContract;
-import com.droidit.JenkinsBuilder.DefaultApplication;
+import com.droidit.JenkinsBuilder.JenkinsApplication;
 import com.droidit.JenkinsBuilder.R;
 import com.droidit.JenkinsBuilder.dependencyInjection.ApplicationComponent;
 import com.droidit.JenkinsBuilder.dependencyInjection.BasicExampleComponent;
@@ -24,7 +24,7 @@ import butterknife.OnClick;
  * Created by JohannesC on 30-May-16.
  * Basic activity which shows MVP, navigation, and some networking logic
  */
-public class BasicExampleActivity extends AppCompatActivity implements BasicExampleContract.View {
+public class MainActivity extends AppCompatActivity implements BasicExampleContract.View {
 
     @BindView(R.id.activity_main_posts_tv)
     TextView activity_main_posts_tv;
@@ -42,7 +42,7 @@ public class BasicExampleActivity extends AppCompatActivity implements BasicExam
     }
 
     protected ApplicationComponent getApplicationComponent() {
-        return ((DefaultApplication) this.getApplication()).getMainComponent();
+        return ((JenkinsApplication) this.getApplication()).getMainComponent();
     }
 
     private void initializeInjector() {
